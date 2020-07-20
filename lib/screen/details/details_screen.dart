@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:furniture_app/constants.dart';
 import 'package:furniture_app/models/Product.dart';
+import 'package:furniture_app/screen/details/components/body.dart';
 
 class DetailsScreen extends StatelessWidget {
   final Product product;
@@ -16,6 +17,7 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(context),
       backgroundColor: kPrimaryColor,
+      body: Body(product: product),
     );
   }
 
