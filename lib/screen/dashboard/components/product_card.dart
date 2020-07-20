@@ -51,9 +51,12 @@ class ProductCard extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 height: 160,
                 width: 200,
-                child: Image.asset(
-                  product.image,
-                  fit: BoxFit.cover,
+                child: Hero(
+                  tag: product.id.toString(),
+                  child: Image.asset(
+                    product.image,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),

@@ -31,7 +31,10 @@ class Body extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                ProductImage(size: size, image: product.image),
+                Hero(
+                  tag: product.id.toString(),
+                  child: ProductImage(size: size, image: product.image),
+                ),
                 ColorSelector(),
                 SizedBox(height: kDefaultPadding),
                 ProductInfo(product: product),
