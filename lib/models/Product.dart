@@ -18,7 +18,7 @@ List<Product> products = [
     title: "Classic Leather Arm Chair",
     image: "assets/images/Item_1.png",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
   ),
   Product(
     id: 4,
@@ -26,7 +26,7 @@ List<Product> products = [
     title: "Poppy Plastic Tub Chair",
     image: "assets/images/Item_2.png",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
   ),
   Product(
     id: 9,
@@ -34,6 +34,6 @@ List<Product> products = [
     title: "Bar Stool Chair",
     image: "assets/images/Item_3.png",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
   ),
 ];

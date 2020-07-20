@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_app/constants.dart';
 import 'package:furniture_app/models/Product.dart';
+import 'package:furniture_app/screen/details/components/chat_and_cart.dart';
 import 'package:furniture_app/screen/details/components/color-selector.dart';
 import 'package:furniture_app/screen/details/components/product_image.dart';
+import 'package:furniture_app/screen/details/components/product_info.dart';
 
 class Body extends StatelessWidget {
   final Product product;
@@ -27,17 +29,17 @@ class Body extends StatelessWidget {
               ),
             ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Center(
-                  child: ProductImage(
-                    size: size,
-                    image: product.image,
-                  ),
-                ),
+                ProductImage(size: size, image: product.image),
                 ColorSelector(),
+                SizedBox(height: kDefaultPadding),
+                ProductInfo(product: product),
+                SizedBox(height: kDefaultPadding / 2),
               ],
             ),
           ),
+          ChatAndCart()
         ],
       ),
     );
