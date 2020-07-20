@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:furniture_app/constants.dart';
 import 'package:furniture_app/models/Product.dart';
 import 'package:furniture_app/screen/dashboard/components/product_card.dart';
+import 'package:furniture_app/screen/details/details_screen.dart';
 
 class ProductListWithBackdrop extends StatelessWidget {
   const ProductListWithBackdrop({
@@ -28,7 +29,14 @@ class ProductListWithBackdrop extends StatelessWidget {
             itemBuilder: (ctx, index) => ProductCard(
               isEven: index.isEven,
               product: products[index],
-              onPress: () {},
+              onPress: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (ctx) => DetailsScreen(
+                    product: products[index],
+                  ),
+                ),
+              ),
             ),
           )
         ],
